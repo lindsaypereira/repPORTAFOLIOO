@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lindsay «Lili» · Desarrollo web y marketing digital</title>
+  <meta name="description" content="Portafolio de Lindsay (Lili), estudiante de Ingeniería en Tecnología de la Información con énfasis en desarrollo web y marketing digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <a class="logo" href="#inicio">Lili<span>.dev</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="menu-cta">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="hero-kicker">Hola, soy</p>
+        <h1>
+          <span class="solid">Lindsay</span>
+          <span class="outline" aria-hidden="true">«Lili»</span>
+        </h1>
+        <p class="hero-role">Desarrollo web y marketing digital</p>
+        <p class="hero-lead">
+          Estudiante de Ingeniería en Tecnología de la Información. Me gusta crear páginas
+          que se vean bien en cualquier pantalla y que ayuden a un negocio a darse a conocer.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto">Contáctame</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="ring">
+          <img src="img/lili.jpg" alt="Retrato de Lindsay, sonriendo y con lentes, frente a la playa" width="900" height="1200">
+        </div>
+        <div class="chip chip-a">HTML · CSS · JS</div>
+        <div class="chip chip-b">4.º año de ingeniería</div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section about" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Soy Lindsay, pero todos me dicen Lili. Tengo 20 años y estoy en cuarto año de
+            Ingeniería en Tecnología de la Información, con énfasis en desarrollo web y marketing digital.
+          </p>
+          <p>
+            Soy emprendedora, creativa y disciplinada, y siempre tengo ganas de aprender algo nuevo.
+            Me encantan la tecnología, el marketing digital, la edición de video y el diseño de flyers:
+            todo lo que me permita crear.
+          </p>
+          <p>
+            Hasta ahora he desarrollado la página web de una clínica dental y una web de práctica para un salón de uñas.
+            Además, he diseñado flyers para pastelerías y para personas con pequeños emprendimientos.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><strong>4.º año</strong><span>Ingeniería en Tecnología de la Información</span></li>
+          <li><strong>2 sitios web</strong><span>Clínica dental y web de uñas</span></li>
+          <li><strong>Diseño</strong><span>Flyers y edición de video</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades">
+      <h2>Habilidades y tecnologías</h2>
+      <ul class="skills">
+        <li><b>HTML</b><span>Estructura semántica de páginas</span></li>
+        <li><b>CSS</b><span>Diseño adaptable a celular y escritorio</span></li>
+        <li><b>JavaScript</b><span>Interacción y funcionalidad</span></li>
+        <li><b>Desarrollo web</b><span>De la idea al sitio terminado</span></li>
+        <li><b>Marketing digital</b><span>Contenido y presencia en redes</span></li>
+        <li><b>Edición de video</b><span>Videos cortos para redes</span></li>
+        <li><b>Diseño de flyers</b><span>Piezas para pequeños negocios</span></li>
+      </ul>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <p class="section-sub">Sitios web pensados para verse bien en el teléfono.</p>
+
+      <div class="projects">
+        <article class="project">
+          <div class="shot"><img src="img/clinica.jpg" alt="Página de inicio de la web de la Clínica Dental Grace" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Clínica Dental Grace</h3>
+            <p>Sitio informativo con carrusel de fotos, servicios y botón para agendar citas por WhatsApp, pensado para verse bien en el celular.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
+            <a class="btn btn-ghost" href="proyectos/clinica/index.html">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="shot"><img src="img/unas.jpg" alt="Página de inicio de la web de un salón de uñas" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Frasmin Nails · Web  de uñas</h3>
+            <p>Proyecto de práctica: sitio para un salón de uñas con servicios, un probador de colores, formas y acabados, y reserva por WhatsApp.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
+            <a class="btn btn-ghost" href="proyectos/unas/index.html">Ver proyecto</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="flyers-note">
+        También diseño flyers para pastelerías y pequeños emprendimientos. Si te interesa verlos, escríbeme y con gusto te los muestro.
+      </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <h2>Hablemos</h2>
+      <p class="section-sub">¿Tienes un proyecto o una idea? Cuéntame y vemos cómo hacerla realidad.</p>
+
+      <div class="contact-grid">
+        <ul class="contact-links">
+          <!-- Cambia estos datos por los tuyos -->
+          <li><span>Correo</span><a href="mailto:lindsaypereira152005@gmail.com">lindsaypereira152005@gmail.com</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/77048206">77048206</a></li>
+          <li><span>Instagram</span><a href="https://instagram.com/lil_ij15">lil_ij15</a></li>
+        </ul>
+
+        <form class="form" id="form" novalidate>
+          <label>Nombre
+            <input type="text" name="nombre" autocomplete="name" required>
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Lindsay «Lili». Hecho con HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
